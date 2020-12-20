@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Header }  from "./components/Header/"
 import SocialMedia from "./components/SocialMedia"
+import { Button } from './components/Button/'
 
 const AppContainer = styled.div`
   border: 2px solid lightcoral;
@@ -10,7 +11,7 @@ const AppContainer = styled.div`
 function App() {
   return (
     <AppContainer>
-      <p>App Comppne</p>
+      <Button/>
     </AppContainer>
   )
 }
