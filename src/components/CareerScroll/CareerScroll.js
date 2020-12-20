@@ -11,41 +11,48 @@ import service from "../../assets/service-icon.png"
 import transportation from "../../assets/transportation-icon.png"
 
 const StyledDiv = styled.div`
-    border: 2px solid black;
-    padding: 8px;
-
-
+    display: flex;
+    justify-content: center;
 & > div {
-    border: 2px solid green;
+    overflow: scroll;
+    white-space: nowrap;
     display: inline-block;
+    max-width: 600px;
+    border: 2px solid #13A77B;
+    border-radius: 10px;
+    box-shadow: 0px 12px 17px rgba(0, 0, 0, 0.14), 0px 5px 22px rgba(0, 0, 0, 0.12), 0px 7px 8px rgba(0, 0, 0, 0.2);
+
     }
+`
 
-const StyledImg = styled.img
-    border: 2px solid red;
-    margin: 0 200px;
-    width: 80px;
-
-
-const StyledSpan = styled.span
+const StyledSpan = styled.span`
+text-align: center;
+display: inline-block;
+& > img {
     display: inline-block;
-    width: 3rem;
+    margin: 16px 32px 0px;
+} & > p {
+    font-family: 'Open Sans', sans-serif;
+    margin: 4px 4px 8px;
+}
+
 `
 
 
 
 export default function CareerScroll(props) {
     
-    
     return <StyledDiv>
+
    <div>
-      <span><img src={cop}></img></span> 
-       <span><img src={developer}></img></span>
-       <span><img src={electriican}></img></span>
-       <span><img src={fire}></img></span>
-       <span><img src={mechanic}></img></span>
-       <span><img src={retail}></img></span>
-       <span><img src={service}></img></span>
-       <span><img src={transportation}></img></span>
+       <StyledSpan><img src={cop}></img><p>police</p></StyledSpan> 
+       <StyledSpan><img src={developer}></img><p>software</p></StyledSpan>
+       <StyledSpan><img src={electriican}></img><p>electrical</p></StyledSpan>
+       <StyledSpan><img src={fire}></img><p>fire safety</p></StyledSpan>
+       <StyledSpan><img src={mechanic}></img><p>mechanic</p></StyledSpan>
+       <StyledSpan><img src={retail}></img><p>retail</p></StyledSpan>
+       <StyledSpan><img src={service}></img><p>service</p></StyledSpan>
+       <StyledSpan><img src={transportation}></img><p>transport</p></StyledSpan>
    </div> 
     
     </StyledDiv>
