@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom'
 import './index.css';
 import FakeApp from './FakeApp'
 // import App from './App';
 
 function Index() {
   return (
-    <FakeApp />
+    <Router>
+      <FakeApp />
+    </Router>
   )
 }
 
