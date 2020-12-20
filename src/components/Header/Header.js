@@ -1,12 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
+import mentorLogo from '../../assets/mentor-hub-logo.svg'
 
 const HeaderContainer = styled.div`
     border: 2px solid lightcoral;
 
-    & > p {
-        color: blue;
-    }
 `
 
 //components should have a capital letter in the begining
@@ -14,7 +12,7 @@ const HeaderContainer = styled.div`
 export default function Header() {
     return (
         <HeaderContainer>
-            <p>Mentor Hub</p>
+            <img src={mentorLogo}/>
         </HeaderContainer>
     )
 }

@@ -20,14 +20,20 @@ letter-spacing: 0.04em;
 text-transform: uppercase;
 padding-left: 4px;
 color: #13A77B;
+border-radius: 10px;
 
 & > div {
 background: #FFFFFF;
-border: 2px solid #13A77B;
+border: 1px solid #13A77B;
 box-sizing: border-box;
 width: 4px;
-height: 16px;
+height: 60px;
+margin: 8px;
 box-shadow: 0px 12px 17px rgba(0, 0, 0, 0.14), 0px 5px 22px rgba(0, 0, 0, 0.12), 0px 7px 8px rgba(0, 0, 0, 0.2);
+}
+
+& > p {
+  margin-right: 4px;
 }
 `
 
