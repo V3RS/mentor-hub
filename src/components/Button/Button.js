@@ -13,6 +13,17 @@ const StyledButton = styled.button`
   border-radius: 2px;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  outline: none;
+
+  &:hover {
+    box-shadow: 2px 2px 0px rgba(48, 48, 48, 0.25);
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+
+
 `
 
 const StyledImg = styled.img`
