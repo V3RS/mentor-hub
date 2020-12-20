@@ -21,7 +21,7 @@ function App() {
       <Picked messageText={"AWESOME! IF THIS MENTOR ALSO CHOOSES \"CONNECT\", WE WILL HAVE THE MENTOR FOLLOW UP."}/>
       <br></br>
       <Inputs type={"email"} placeholder={"Email"}/>
-      <Inputs type={"password"} placeholder={"password"}/>
+      <Inputs type={"password"} placeholder={"Password"}/>
     </AppContainer>
   )
 }
