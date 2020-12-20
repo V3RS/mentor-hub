@@ -4,6 +4,7 @@ import { Header } from './components/Header'
 import { Button } from './components/Button/'
 import { Inputs } from './components/Inputs'
 import { Picked } from './components/Picked'
+import { Card } from './components/Card'
 
 
 const AppContainer = styled.div`
@@ -22,6 +23,8 @@ function App() {
       <br></br>
       <Inputs type={"email"} placeholder={"Email"}/>
       <Inputs type={"password"} placeholder={"Password"}/>
+      <br></br>
+      <Card />
     </AppContainer>
   )
 }
