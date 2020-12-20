@@ -6,7 +6,7 @@ import FakeApp from './FakeApp'
 
 function Index() {
   return (
-    <App />
+    <FakeApp />
   )
 }
 
