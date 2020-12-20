@@ -18,7 +18,6 @@ font-size: 16px;
 const StyledImg = styled.img`
 width: 16px;
 display: ${props => props.display};
-border: 2px solid black
 `
 
 //components should have a capital letter in the begining
@@ -51,11 +50,11 @@ function setButtonStyling(status) {
         background: `#FFFFFF`,
         color: `#303030`,
         border: `border: 2px solid #303030`,
-        display: `block`
+        display: `inline-block`
       }
   }
 }
 
-  return <StyledButton  background={background} border={border} color={color}>{buttonText} <StyledImg display={display} src={googleIcon}></StyledImg></StyledButton>
+  return <StyledButton background={background} border={border} color={color}>{buttonText} <StyledImg display={display} src={googleIcon}></StyledImg></StyledButton>
 
 }
