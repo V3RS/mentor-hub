@@ -21,6 +21,7 @@ text-transform: uppercase;
 padding-left: 4px;
 color: #13A77B;
 border-radius: 10px;
+margin: 4px;
 
 & > div {
 background: #FFFFFF;
@@ -33,16 +34,21 @@ box-shadow: 0px 12px 17px rgba(0, 0, 0, 0.14), 0px 5px 22px rgba(0, 0, 0, 0.12),
 }
 
 & > p {
+  color: ${props => props.color};
   margin-right: 4px;
 }
 `
+// "AWESOME! IF THIS MENTOR ALSO CHOOSES \"CONNECT\", WE WILL HAVE THE MENTOR FOLLOW UP."
+export default function (props) {
+  const { messageText, messageStyle } = props
+  // const { color } = setMessageStatus(messageStyle)
 
-export default function () {
+
   return (
       <MessageContainer>
           <img src={check}/>
           <div></div>
           <p>{"AWESOME! IF THIS MENTOR ALSO CHOOSES \"CONNECT\", WE WILL HAVE THE MENTOR FOLLOW UP."}</p>
       </MessageContainer>
-  )
+    )
 }
