@@ -3,14 +3,6 @@ import styled from "styled-components";
 import locationLogo from "../../../assets/location-logo.png"
 
 const LocationContainer = styled.div `
-/* Location text */
-
-font-family: Open Sans;
-font-style: normal;
-font-weight: 300;
-font-size: 15px;
-line-height: 16px;
-/* identical to box height, or 107% */
 
 display: flex;
 align-item: center;
@@ -24,6 +16,18 @@ color: #303030;
 & > p {
     margin: 0px 0px 0px 8px;
 
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 16px;
+    /* identical to box height, or 107% */
+
+
+    /* Primary/Black */
+
+    color: #303030;
+
 }
 `
 
@@ -32,7 +36,7 @@ export default function Location() {
     return (
         <LocationContainer>
             <img src={locationLogo} />
-            <p>Location</p>
+            <p>Detroit, MI</p>
         </LocationContainer>
     )
 }
