@@ -11,7 +11,9 @@ const AppContainer = styled.div`
 function App() {
   return (
     <AppContainer>
-      <Button/>
+      <Button buttonText={'Register'} buttonStyle={'primary'} />
+      <Button buttonText={'Register'} buttonStyle={'secondary'} />
+      <Button buttonText={'Register Using'} buttonStyle={'google-btn'} />
     </AppContainer>
   )
 }

@@ -1,103 +1,61 @@
 import React from "react";
 import styled from "styled-components";
+import googleIcon from "../../assets/google-icon.png"
 
-const ButtonContainer = styled.div`
-        & > #reg {
-          position: absolute;
-          width: 328px;
-          height: 40px;
-          left: calc(50% - 328px / 2 + 0.5px);
-          top: 636px;
+const StyledButton = styled.button`
+background: ${props => props.background};
+border: ${props => props.border};
+box-sizing: border-box;
+width: 328px;
+height: 40px;
+color: ${props => props.color};
+box-shadow: 4px 4px 0px rgba(48, 48, 48, 0.25);
+border-radius: 2px;
+font-family: 'Open Sans', sans-serif;
+font-size: 16px;
+`
 
-          /* Primary/White */
-
-          background: #ffffff;
-          /* Primary/Black */
-
-          border: 2px solid #303030;
-          box-sizing: border-box;
-          /* 4px */
-
-          box-shadow: 4px 4px 0px rgba(48, 48, 48, 0.25);
-          border-radius: 2px;
-        }
-
-        & > div {
-          /* Or */
-
-          position: absolute;
-          width: 328px;
-          height: 16px;
-          left: 24px;
-          top: 692px;
-
-          font-family: Open Sans;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 16px;
-          line-height: 16px;
-          /* identical to box height, or 100% */
-
-          display: flex;
-          align-items: center;
-          text-align: center;
-          letter-spacing: 0.02em;
-          text-transform: uppercase;
-
-          /* Primary/Black */
-
-          color: #303030;
-        }
-
-        & > #sign-in {
-          /* Button/Secondary/default */
-
-
-          position: absolute;
-          width: 328px;
-          height: 40px;
-          left: calc(50% - 328px/2 + 0.5px);
-          top: 724px;
-
-          /* Primary/White */
-
-          background: #FFFFFF;
-          /* Primary/Black */
-
-          border: 2px solid #303030;
-          box-sizing: border-box;
-          /* 4px */
-
-          box-shadow: 4px 4px 0px rgba(48, 48, 48, 0.25);
-          border-radius: 2px;
-
-    }
-`;
+const StyledImg = styled.img`
+width: 16px;
+display: ${props => props.display};
+border: 2px solid black
+`
 
 //components should have a capital letter in the begining
 
-export default function Button() {
-  function regHandler() {
-    return;
+//font-family: 'Open Sans', sans-serif;
+
+export default function Button(props) {
+  const { buttonText, buttonStyle } = props
+  const { background, border, color, display } = setButtonStyling(buttonStyle)
+
+
+function setButtonStyling(status) {
+  if (status === 'primary') {
+    return {
+        background: `#13A77B`,
+        color: `white`,
+        border: `border: 2px solid #303030`,
+        display: `none`
+    }
+  } else if (status === 'secondary') {
+    return {
+      background: `#FFFFFF`,
+      color: `#303030`,
+      border: `border: 2px solid #303030`,
+      display: `none`
+    }
   }
-
-  function signInHandler() {
-    return;
+  else if (status === 'google-btn') {
+      return {
+        background: `#FFFFFF`,
+        color: `#303030`,
+        border: `border: 2px solid #303030`,
+        display: `block`
+      }
   }
-  return (
-    <ButtonContainer>
+}
 
+  return <StyledButton  background={background} border={border} color={color}>{buttonText} <StyledImg display={display} src={googleIcon}></StyledImg></StyledButton>
 
-        {/* <input type="text" id="email" placeholder="Email"> </input> */}
-        <button id="reg" onClick={regHandler}>
-        Register
-      </button>
-      <div>OR</div>
-      <button id="sign-in" onClick={signInHandler}>
-        Sign In
-      </button>
-
-
-    </ButtonContainer>
-  );
 }
