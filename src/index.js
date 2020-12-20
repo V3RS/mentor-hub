@@ -1,9 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import FakeApp from './FakeApp'
+// import App from './App';
+
+function Index() {
+  return (
+    <App />
+  )
+}
 
 ReactDOM.render(
-    <App />,
-  document.getElementById('root')
+   <Index />, document.getElementById('root')
 )
