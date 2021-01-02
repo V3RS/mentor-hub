@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { TempLandingPage } from './pages/TempLandingPage'
 import { Playground } from './pages/playground'
 
 const AppContainer = styled.div`
@@ -12,7 +13,8 @@ const AppContainer = styled.div`
 function App() {
   return (
     <AppContainer>
-      <Playground />
+      <TempLandingPage />
+      {/* <Playground /> */}
     </AppContainer>
   )
 }
