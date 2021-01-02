@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { TempLandingPage } from './pages/TempLandingPage'
-import { Playground } from './pages/playground'
+// import { Playground } from './pages/playsground'
 
 const AppContainer = styled.div`
   box-sizing: border-box;
