@@ -1,12 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import FakeApp from './FakeApp'
-// import App from './App';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { Playground } from './pages/Playground'
+import './index.css'
 
 function Index() {
   return (
-      <FakeApp />
+      <Playground />
   )
 }
 
