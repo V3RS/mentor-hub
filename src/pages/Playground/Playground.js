@@ -6,7 +6,6 @@ import { Inputs } from '../../components/Inputs'
 import { Picked } from '../../components/Picked'
 
 const PlaygroundContainer = styled.div`
-    border: 2p dashed blue;
     padding: 24px; 
 
     & > h1 {
@@ -17,15 +16,26 @@ const PlaygroundContainer = styled.div`
         line-height: 32px;
         text-transform: uppercase;
         color: #303030;
+
+        @media (min-width: 768px) {
+            font-size: 48px;
+            line-height: 48px;
+            height: 96px;
+        }
     }
 
     & > h3 {
-        margin: 40px 0px 16px 0px;
+        margin: 56px 0px 16px 0px;
         font-family: 'Open Sans';
         font-family: 'Open Sans';
         font-size: 24px;
         line-height: 24px;
         color: #303030;
+
+        @media (min-width: 768px) {
+            font-size: 32px;
+            line-height: 32px;
+        }
     }
 `
 
