@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import { MemberSection } from './MemberSection'
 import smallLogo from '../../assets/images/logo-small.png'
 
 const PageContainer = styled.div`
@@ -51,6 +51,7 @@ export default function TempLandingPage() {
             <div className={'img-container'}></div>
             <p>{'Check back soon...'}</p>
             <h2>{'The team'}</h2>
+            <MemberSection />
         </PageContainer>
     )
 }
