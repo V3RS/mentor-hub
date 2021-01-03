@@ -1,9 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
+import SocialLinks from '../SocialLinks'
 import stedmanHeadshot from '../../../assets/images/Stedman-headshot.png'
+import danHeadshot from '../../../assets/images/dan-headshot.png'
+import veerHeadshot from '../../../assets/images/veer-headshot.png'
 
 const SectionContainer = styled.div`
     /* box-sizing: border-box; */
+    margin: 80px 0px 0px 0px;
     width: 100%;
     height: 288px;
     position: relative;
@@ -17,7 +21,8 @@ const SectionContainer = styled.div`
         left: calc(50% - 328px/2);
         font-family: 'Open Sans';
         font-style: normal;
-        font-weight: 500;
+        font-weight: bold;
+        /* font-weight: 500; */
         font-size: 24px;
         line-height: 24px;
         text-align: center;
@@ -85,10 +90,14 @@ export default function MemberSection(props) {
     function setImage(name) {
         if (name === 'stedman') {
             return stedmanHeadshot
+        } else if (name === 'dan') {
+            return danHeadshot
+        } else if (name === 'veer') {
+            return veerHeadshot
         }
     }
+
     let image = setImage(objName)
-    console.log(image)
 
     return (
         <SectionContainer>
@@ -96,6 +105,7 @@ export default function MemberSection(props) {
             <div className={'headshot-container'}><img src={image} alt={'dont know'} /></div>
             <p className={'body-one'}>{role}</p>
             <p className={'body-two'}>{branch}</p>
+            <SocialLinks linkedIn={'linkedin url'} github={'github url'} portfolio={'portfolio url'} />
         </SectionContainer>
     )
 }

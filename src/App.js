@@ -7,7 +7,7 @@ const AppContainer = styled.div`
   box-sizing: border-box;
   width: 100%;
   height: 100vh;
-  border: 2px solid green;
+  /* border: 2px solid green; */
 `
 
 function App() {

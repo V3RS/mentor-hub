@@ -10,7 +10,7 @@ const PageContainer = styled.div`
     width: 100%;
     height: 100%;
     /* padding: 80px 0px 0px 0px; */
-    border: 1px dotted lightcoral;
+    /* border: 1px dotted lightcoral; */
 
     & > .img-container {
         width: 328px;
@@ -77,6 +77,26 @@ export default function TempLandingPage() {
             <p>{'Check back soon...'}</p>
             <h2>{'The team'}</h2>
             <div className={'sections-container'}>
+                <MemberSection
+                    name={'Veer Singh'}
+                    branch={'USMC'}
+                    role={'Developer'}
+                    linkedIn={'linkedin link'}
+                    github={'github link'}
+                    portfolio={'portfolio'}
+                    objName={'veer'}
+                />
+
+                <MemberSection
+                    name={'Dan Engel'}
+                    branch={'USMC'}
+                    role={'Developer'}
+                    linkedIn={'linkedin link'}
+                    github={'github link'}
+                    portfolio={'portfolio'}
+                    objName={'dan'}
+                />
+
                 <MemberSection
                     name={'Michael Stedman'}
                     branch={'Army'}
