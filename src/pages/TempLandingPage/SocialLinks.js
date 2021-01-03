@@ -21,13 +21,11 @@ const LinksContainer = styled.div`
         align-items: center;
         /* border: 1px dotted blue; */
     }
-
 `
 
 export default function SocialLinks(props) {
     const { linkedIn, github, portfolio } = props
 
-    console.log(linkedIn, github, portfolio)
     return (
         <LinksContainer>
             <div className={'icon-container'}>
@@ -35,7 +33,6 @@ export default function SocialLinks(props) {
                     <img src={linkedinIcon} alt={'hello'} />
                 </a>
             </div>
-
 
             <div className={'icon-container'}>
                 <a href={github} target={`_blank`} rel={`noopener noreferrer`}>

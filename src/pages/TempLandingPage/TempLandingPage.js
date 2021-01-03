@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { MemberSection } from './MemberSection'
-// import stedmanHeadshot from '../../assets/images/Stedman-headshot.png'
 import smallLogo from '../../assets/images/logo-small.png'
 
 const PageContainer = styled.div`
@@ -9,8 +8,6 @@ const PageContainer = styled.div`
     position: relative;
     width: 100%;
     height: 100%;
-    /* padding: 80px 0px 0px 0px; */
-    /* border: 1px dotted lightcoral; */
 
     & > .img-container {
         width: 328px;
@@ -22,11 +19,10 @@ const PageContainer = styled.div`
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
-        border: 1px dotted blue;
+        /* border: 1px dotted blue; */
     }
 
     & > p {
-        /* margin: 64px 0px 72px 0px; */
         width: 220px;
         height: 48px;
         position: absolute;
@@ -39,11 +35,10 @@ const PageContainer = styled.div`
         line-height: 24px;
         letter-spacing: 0.02em;
         color: #303030;
-        border: 1px dotted blue;
+        /* border: 1px dotted blue; */
     }
 
     & > h2 {
-        /* margin: 0px 0px 40px 0px; */
         width: 328px;
         position: absolute;
         top: 320px;
@@ -57,18 +52,16 @@ const PageContainer = styled.div`
         letter-spacing: 0.02em;
         text-transform: uppercase;
         color: #303030;
-        border: 1px dotted blue;
+        /* border: 1px dotted blue; */
     }
 
     & > .sections-container {
         position: absolute;
         top: 416px;
         width: 100%;
-        border: 2px solid pink;
+        /* border: 2px solid pink; */
     }
 `
-
-
 
 export default function TempLandingPage() {
     return (
