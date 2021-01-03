@@ -13,7 +13,7 @@ const LinksContainer = styled.div`
     justify-content: space-between;
     /* border: 1px solid green; */
 
-    & > div {
+    & > .icon-container {
         width: 32px;
         height: 32px;
         display: flex;
@@ -30,9 +30,24 @@ export default function SocialLinks(props) {
     console.log(linkedIn, github, portfolio)
     return (
         <LinksContainer>
-            <div><img src={linkedinIcon} alt={'hello'} /></div>
-            <div><img src={githubIcon} alt={'hello'} /></div>
-            <div><img src={portfolioIcon} alt={'hello'} /></div>
+            <div className={'icon-container'}>
+                <a href={linkedIn} target={`_blank`} rel={`noopener noreferrer`} >
+                    <img src={linkedinIcon} alt={'hello'} />
+                </a>
+            </div>
+
+
+            <div className={'icon-container'}>
+                <a href={github} target={`_blank`} rel={`noopener noreferrer`}>
+                    <img src={githubIcon} alt={'hello'} />
+                </a>
+            </div>
+
+            <div>
+                <a href={portfolio} target={`_blank`} rel={`noopener noreferrer`}>
+                    <img src={portfolioIcon} alt={'hello'} />
+                </a>
+            </div>
         </LinksContainer>
     )
 }

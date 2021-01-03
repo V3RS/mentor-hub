@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { MemberSection } from './MemberSection'
-import stedmanHeadshot from '../../assets/images/Stedman-headshot.png'
+// import stedmanHeadshot from '../../assets/images/Stedman-headshot.png'
 import smallLogo from '../../assets/images/logo-small.png'
 
 const PageContainer = styled.div`
@@ -81,9 +81,9 @@ export default function TempLandingPage() {
                     name={'Veer Singh'}
                     branch={'USMC'}
                     role={'Developer'}
-                    linkedIn={'linkedin link'}
-                    github={'github link'}
-                    portfolio={'portfolio'}
+                    linkedIn={`https://www.linkedin.com/in/veerkaran-singh-45b4a9190/`}
+                    github={`https://github.com/V3RS`}
+                    portfolio={'http://www.google.com'}
                     objName={'veer'}
                 />
 
@@ -93,7 +93,7 @@ export default function TempLandingPage() {
                     role={'Developer'}
                     linkedIn={'linkedin link'}
                     github={'github link'}
-                    portfolio={'portfolio'}
+                    portfolio={'http://www.yahoo.com'}
                     objName={'dan'}
                 />
 
@@ -101,9 +101,9 @@ export default function TempLandingPage() {
                     name={'Michael Stedman'}
                     branch={'Army'}
                     role={'UX Designer & Developer'}
-                    linkedIn={'linkedin link'}
-                    github={'github link'}
-                    portfolio={'portfolio'}
+                    linkedIn={'https://www.linkedin.com/in/stedman/'}
+                    github={`https://github.com/recondesigns`}
+                    portfolio={'https://stedman-ux-developer.netlify.app/'}
                     objName={'stedman'}
                 />
             </div>

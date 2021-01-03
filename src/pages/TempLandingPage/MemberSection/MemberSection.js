@@ -85,7 +85,7 @@ const SectionContainer = styled.div`
 `
 
 export default function MemberSection(props) {
-    const { name, branch, role, objName } = props
+    const { name, branch, role, objName, linkedIn, github, portfolio } = props
 
     function setImage(name) {
         if (name === 'stedman') {
@@ -105,7 +105,7 @@ export default function MemberSection(props) {
             <div className={'headshot-container'}><img src={image} alt={'dont know'} /></div>
             <p className={'body-one'}>{role}</p>
             <p className={'body-two'}>{branch}</p>
-            <SocialLinks linkedIn={'linkedin url'} github={'github url'} portfolio={'portfolio url'} />
+            <SocialLinks linkedIn={linkedIn} github={github} portfolio={portfolio} />
         </SectionContainer>
     )
 }
